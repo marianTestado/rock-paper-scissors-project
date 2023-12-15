@@ -33,7 +33,7 @@ function playRound(playerSelection, computerSelection){
 
     if(playerAnswer == computerSelection)
     {
-        return `You both chose ${playerAnswer}, it's a draw!`;
+        return `You both chose ${playerAnswer.replace(playerAnswer.charAt(0), (playerAnswer.charAt(0)).toUpperCase() )}, it's a draw!`;
     }
     else
     {
@@ -84,6 +84,6 @@ function playRound(playerSelection, computerSelection){
 
 }
 
-const playerSelection = 'scsors';
+const playerSelection = 'pApEr';
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
